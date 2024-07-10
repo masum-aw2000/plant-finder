@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 
 const fetchPlants = async () => {
-  const apiKey = 'sk-fptx6591db5a4df6f3616'; // Ensure your API key is correct
+  // const apiKey = 'YOUR API KEY';
   const response = await axios.get(`https://perenual.com/api/species-list?key=${apiKey}`);
   return response.data;
 };
